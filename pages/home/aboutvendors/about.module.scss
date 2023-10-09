@@ -1,0 +1,72 @@
+.about-vendors {
+	background: #513980;
+	border-radius: 20px;
+	padding: 20px 20px 40px;
+	margin: 60px 0px 40px;
+
+	.vendors {
+		padding: 40px 70px 20px 20px;
+		@media(max-width:767px)  {
+			padding: 0px;
+		}
+
+		h3 {
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 130%;
+			color: #FFFFFF;
+			padding: 20px 0px;
+
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 130%;
+			color: #FFFFFF;
+			padding-bottom: 40px;
+
+		}
+
+		ul {
+			margin: 0;
+    		padding: 0;
+			li {
+				position: relative;
+				padding-left: 40px;
+
+				span {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 150%;
+					color: #FFFFFF;
+					margin-bottom: 8px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 150%;
+					color: #FFFFFF;
+					margin-bottom: 26px;
+					padding: 0;
+				}
+
+				&::before {
+					content: url('/images/star.png');
+					position: absolute;
+					left: -30px;
+					top: -24px;
+				}
+			}
+		}
+	}
+	.about-image {
+		img {
+			@media(max-width:767px) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.banner {
+	position: relative;
+
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: top center;
+	}
+
+	.banner-content {
+		position: absolute;
+		top: 16%;
+		left: 7%;
+		width: 580px;
+		@media(max-width:767px) {
+			left: 12px;
+			top: 3%;
+			width: auto;
+		}
+		h1 {
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 120%;
+			color: #FFFFFF;
+			@media(max-width:767px) {
+				font-size: 18px;
+			}
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 130%;
+			color: #FFFFFF;
+			padding: 26px 0px;
+			@media(max-width:767px) {
+				padding: 10px 0px;
+				font-size: 14px;
+				width: 340px;
+			}
+		}
+
+		a {
+			background: #F67832;
+			border-radius: 4px;
+			padding: 12px 38px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			display: inline-block;
+			transition: 0.5s all ease-in-out;
+            text-decoration: none;
+			@media(max-width:767px) { 
+				padding: 6px 11px;
+			}
+			&:hover{
+				background: #ffcc02;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+import keyMirror from "keymirror";
+
+const actionTypes = keyMirror({
+  // Events
+  FETCH_USERS_START: null,
+  FETCH_USERS_SUCCESS: null,
+  FETCH_USERS_FAILURE: null,
+
+  REGISTER_VENDOR_START: null,
+  REGISTER_VENDOR_SUCCESS: null,
+  REGISTER_VENDOR_FAILURE: null,
+
+  OTP_VERIFICATION_START: null,
+  OTP_VERIFICATION_SUCCESS: null,
+  OTP_VERIFICATION_FAILURE: null,
+
+  VENDOR_SIGNIN_START: null,
+  VENDOR_SIGNIN_SUCCESS: null,
+  VENDOR_SIGNIN_FAILURE: null,
+
+  VENDOR_BUSINESS_DEATILS_START: null,
+  VENDOR_BUSINESS_DEATILS_SUCCESS: null,
+  VENDOR_BUSINESS_DEATILS_FAILURE: null,
+});
+export default actionTypes;
