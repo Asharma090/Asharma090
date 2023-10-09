@@ -20,7 +20,7 @@ const categories = [
   // Add more categories and sub-categories here as needed
 ];
 
-const SecondStep = ({ style }: any) => {
+const SecondStep = ({ style = {} }: any) => {
   const { user } = useSelector((state) => state.user);
   const fileInputRef = useRef(null);
   const dispatch = useDispatch();

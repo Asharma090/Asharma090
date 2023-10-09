@@ -1,4 +1,4 @@
-const FifthStep = ({ style }: any) => {
+const FifthStep = ({ style = {} }: any) => {
   return (
     <div className={style["right-side"]}>
       <h3>Social Media</h3>

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Upload from "../../public/images/upload.png";
 
-const ThirdStep = ({ style }: any) => {
+const ThirdStep = ({ style = {} }: any) => {
   return (
     <div className={style["right-side"]}>
       <h3>Vendor Details</h3>

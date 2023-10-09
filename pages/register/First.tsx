@@ -4,7 +4,7 @@ import { registerVendor, OTPVerification } from "../../store/actions/user";
 import moment from "moment";
 import VendorSignin from "../sign-in/vendor-signin";
 
-const FirstStep = ({ style, nextStep }: any) => {
+const FirstStep = ({ style = {}, nextStep }: any) => {
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
@@ -17,7 +17,6 @@ const FirstStep = ({ style, nextStep }: any) => {
   const [otpExpirationTime, setOtpExpirationTime] = useState(null);
   const [showSignInModal, setshowSignInModal] = useState(false);
   const [isTermsAccepted, setIsTermsAccepted] = useState(false);
-
   useEffect(() => {
     if (user.email && !user.otpVerified) {
       setShowOtpModal(true);
