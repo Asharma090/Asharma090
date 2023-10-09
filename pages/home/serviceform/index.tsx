@@ -27,8 +27,7 @@ export default function index() {
                     </select>
                 </div>
                 <div className={'col-lg-3'}>
-                    <button type="submit
-                ">Search</button>
+                    <button type="submit">Search</button>
                 </div>
             </div>
 
