@@ -1,4 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
 import "bootstrap/dist/css/bootstrap.css";
+
 // import "bootstrap/dist/js/bootstrap.js";
 import "./globals.css";
 import Base from "../template/base";
@@ -27,6 +29,7 @@ export default function RootLayout({
       <ReduxProvider>
         <Base>
           <Home />
+          <Analytics />
         </Base>
       </ReduxProvider>
       </body>
